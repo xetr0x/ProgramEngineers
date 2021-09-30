@@ -16,7 +16,7 @@ app.get('/stylesheet.css', (req,res) => {
 })
 
 app.get('/kevincss.css', (req,res) => {
-    fs.readFile('/kevins_site/kevincss.css', (err, data) => {
+    fs.readFile('kevins_site/kevincss.css', (err, data) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/css');
     res.setHeader('Content-Length', data.length);
@@ -25,11 +25,11 @@ app.get('/kevincss.css', (req,res) => {
 })
 
 app.get('/kevins_site/kevin.html', (req,res) => {
-    fs.readFile('/kevins_site/kevin.html', (err, data) => {
+    fs.readFile('kevins_site/kevin.html', (err, data) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html');
     res.setHeader('Content-Length', data.length);
-    res.end(data);
+    res.send(data);
     })
 })
 
