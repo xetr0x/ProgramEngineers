@@ -1,0 +1,23 @@
+{
+  "name": "teamwebsite",
+  "version": "1.0.0",
+  "description": "\"teamwebsite\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xetr0x/ProgramEngineers.git"
+  },
+  "author": "Program Engineers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xetr0x/ProgramEngineers/issues"
+  },
+  "homepage": "https://github.com/xetr0x/ProgramEngineers#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

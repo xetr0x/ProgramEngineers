@@ -11,17 +11,16 @@
 
 #portrait{
     background-color: blue;
-    display: block;
+    display: inline;
     margin: auto;
     
 }
 
 
 
-.whatwedo{
 
-}
 footer{
     background-color: green;
-
+    margin: 0%;
+     border: 0;
 }
