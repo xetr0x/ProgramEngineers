@@ -18,7 +18,7 @@ app.get('/stylesheet.css', (req,res) => {
 app.get('/kevins_site/kevincss.css', (req,res) => {
     fs.readFile('/kevins_site/kevincss.css', (err, data) => {
     res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/html');
+    res.setHeader('Content-Type', 'text/css');
     res.setHeader('Content-Length', data.length);
     res.end(data);
     })
