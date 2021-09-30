@@ -24,6 +24,24 @@ app.get('/kevins_site/kevin.css', (req,res) => {
     })
 })
 
+app.get('/kevins_site/img/expelbild.jpg', (req,res) => {
+    fs.readFile('img/exempelbild.jpg', (err, data) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'img/jpg');
+    res.setHeader('Content-Length', data.length);
+    res.end(data);
+    })
+})
+
+app.get('/img/exempelbild.jpg', (req,res) => {
+    fs.readFile('img/exempelbild.jpg', (err, data) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'img/jpg');
+    res.setHeader('Content-Length', data.length);
+    res.end(data);
+    })
+})
+
 app.get('/kevins_site/kevin.html', (req,res) => {
     fs.readFile('kevins_site/kevin.html', (err, data) => {
     res.statusCode = 200;
