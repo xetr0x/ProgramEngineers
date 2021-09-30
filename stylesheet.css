@@ -1,0 +1,27 @@
+.intro p{
+    color:green;
+    margin:auto;
+    size:1em;
+}
+
+.members{
+    background-color: red;
+    
+}
+
+#portrait{
+    background-color: blue;
+    display: block;
+    margin: auto;
+    
+}
+
+
+
+.whatwedo{
+
+}
+footer{
+    background-color: green;
+
+}
