@@ -15,7 +15,7 @@ app.get('/stylesheet.css', (req,res) => {
     })
 })
 
-app.get('/kevins_site/kevin.css', (req,res) => {
+app.get('/kevins_site/kevincss.css', (req,res) => {
     fs.readFile('kevins_site/kevincss.css', (err, data) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/css');
@@ -24,11 +24,10 @@ app.get('/kevins_site/kevin.css', (req,res) => {
     })
 })
 
-app.get('/expelbild.jpg', (req,res) => {
-    fs.readFile('/exempelbild.jpg', (err, data) => {
-    res.statusCode = 200;
+app.get('/img/exempelbild.jpg', (req,res) => {
+    fs.readFile('/img/exempelbild.jpg', (err, data) => {
     res.setHeader('Content-Type', 'image/jpg');
-    res.end(data);
+    res.send(data);
     })
 })
 
