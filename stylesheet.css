@@ -14,6 +14,7 @@ header{
 }
 
 header img{
+	
 	margin-top:10px;
 }
 
@@ -38,15 +39,22 @@ header a:hover{
 	
 }
 
-.intro {
+.intro , .whatwedo{
 	display: block;
     margin:auto;
-	width:55%;
+	max-width:55%;
 	margin-top:15px;
 	height: 250px;
-    
+    margin-bottom: 200px;
+	border: black, 2px;
 }
 
+.intro h2, .whatwedo h2 {
+
+	text-align: center;
+	margin-top:100px;
+	margin-bottom:50px;
+}
 
 .members{
 	width: 100%;
@@ -76,6 +84,9 @@ header a:hover{
 	margin-right:5px;
 	
 }
+
+
+
 .profileimage {
 	margin-top:30px;
 	margin-bottom: 15px;
@@ -99,8 +110,15 @@ justify-content: center;
 .portrait h1{
 	text-align: center;
 	margin:5px;
+	margin-top:20px;
 }
-footer{
-    background-color: green;
 
+footer{
+    background-color: #666;
+	height:100px;
+}
+
+footer p{
+	
+	text-align: center;
 }
