@@ -1,30 +1,23 @@
 body{                        /*för body*/
-	padding:0;
+	margin: 0px;
 	background:#fff;
 }
-#wrapper{                              /*id för wrappern*/
-	width:100%;
-	background-color:#FFF;
-	margin:auto;
-	text-align:center;
-}
 
-#meny{
-	width:100%;
+header{
 	height:100px;
 	background-color:#666;
 	float: right ;
 	text-align: center;
 	border-style: double;
 	border-color: gray;
+	width:100%;
 }
 
-
-#meny img{
+header img{
 	margin-top:10px;
 }
 
-#meny a:link, a:visited{    /*meny id för menyn*/
+header a:link, header a:visited{    /*header id för headern*/
 	color:#FFF;
 	display: inline-block;
 	width: 180px;
@@ -38,55 +31,76 @@ body{                        /*för body*/
 }
 
 
-#meny a:hover{
-	color: #008000;
-	width:180px;
-	height:50px;
+header a:hover{
+	color: lightgreen;
 	font-family:Verdana, Geneva, sans-serif;
 	font-weight:bold;
 	
 }
 
-.intro p{
-    color:green;
+.intro {
+	display: block;
     margin:auto;
-    size:1em;
+	width:55%;
+	margin-top:15px;
+	height: 250px;
+    
+}
+
+
+.members{
+	width: 100%;
+	margin:auto;
+	padding: 0 8px;
+	
 }
 
 
 
-.members:after {
+.members:after, .portrait:after {
 	content: "";
 	display: table;
 	clear: both;
-  }
+}
 
-.portrait{                    /*kategori classen är för startsidan, den fixar alla 3 kolumner och deras innehåll*/
-	margin-top:50px;
+.portrait{ 
+    border-color: black;   
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+	border-style:outset;
+	border-width: 1px;        					/*kategori classen är för startsidan, den fixar alla 3 kolumner och deras innehåll*/
 	float:left;
-	width: 33%;
-	height: 400px; 
-	margin-bottom: 200px;
+	width: 30%;
+	height: 700px; 
+	margin-bottom: 16px;
+	margin-left:27px;
+	margin-right:5px;
+	
 }
-.portrait img{
+.profileimage {
 	margin-top:30px;
-
+	margin-bottom: 15px;
+	height:250px;
+	justify-content: center;
+	margin-left:140px;
 }
-.portrait p{
-	text-align:left;
+.portrait h2, p{
+justify-content: center;
 	margin-top:20px;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:1.25em;
-	margin-left:20px;
-	margin-right:15px;
+	margin-left: 40px;
+	margin-right:40px;
 }
-
-
+.portrait h2{
+    display: inline;
+	text-align: center;
+	margin-top: 5px;
+}
+.portrait h1{
+	text-align: center;
+	margin:5px;
+}
 footer{
     background-color: green;
 
-}
-h2{
-    display: inline;
-    
 }
