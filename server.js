@@ -28,7 +28,7 @@ app.get('/kevins_site/kevincss.css', (req,res) => {
 })
 
 app.get('/img/exempelbild.jpg', (req,res) => {
-    fs.readFile('img/exempelbild - kopia.jpg', (err, data) => {
+    fs.readFile('img/exempelbild.jpg', (err, data) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'image/jpg');
         //res.setHeader('Content-Length', data.length);
@@ -44,7 +44,14 @@ app.get('/img/logo.png', (req,res) => {
         res.send(data);
     })
 })
-
+app.get('/kevins_site/portrait.png', (req,res) => {
+    fs.readFile('kevins_site/portrait.png', (err, data) => {
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'image/png');
+        //res.setHeader('Content-Length', data.length);
+        res.send(data);
+    })
+})
 
 
 app.get('/kevins_site/kevin.html', (req,res) => {
