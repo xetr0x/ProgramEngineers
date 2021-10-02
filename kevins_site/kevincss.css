@@ -9,6 +9,7 @@ header{
 }
 
 header img{
+	
 	margin-top:10px;
 }
 
@@ -32,6 +33,7 @@ header a:hover{
 	font-weight:bold;
 	
 }
+
 
 footer {
     height:100px;
