@@ -48,7 +48,7 @@ app.get('/kevins_site/portrait.png', (req,res) => {
     fs.readFile('kevins_site/portrait.png', (err, data) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'image/png');
-        //res.setHeader('Content-Length', data.length);
+        res.setHeader('Content-Length', data.length);
         res.send(data);
     })
 })
