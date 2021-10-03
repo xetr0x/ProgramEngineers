@@ -44,8 +44,17 @@ app.get('/img/logo.png', (req,res) => {
         res.send(data);
     })
 })
-app.get('/kevins_site/portrait.png', (req,res) => {
-    fs.readFile('img/portrait3.png', (err, data) => {
+app.get('/img/kevin.png', (req,res) => {
+    fs.readFile('img/kevin.png', (err, data) => {
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'image/png');
+        //res.setHeader('Content-Length', data.length);
+        res.send(data);
+    })
+})
+
+app.get('/img/william.png', (req,res) => {
+    fs.readFile('img/william.png', (err, data) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'image/png');
         //res.setHeader('Content-Length', data.length);
