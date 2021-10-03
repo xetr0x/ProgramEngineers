@@ -45,7 +45,7 @@ app.get('/img/logo.png', (req,res) => {
     })
 })
 app.get('/kevins_site/portrait.png', (req,res) => {
-    fs.readFile('kevins_site/portrait3.png', (err, data) => {
+    fs.readFile('img/portrait3.png', (err, data) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'image/png');
         //res.setHeader('Content-Length', data.length);
