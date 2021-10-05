@@ -1,10 +1,14 @@
+* {
+	box-sizing: border-box;
+}
+
 body{                        /*för body*/
 	margin: 0px;
 	background:#fff;
 }
 
 header{
-	height:100px;
+	padding-bottom: 1.5em;
 	background-color:#666;
 	float: right ;
 	text-align: center;
@@ -21,7 +25,8 @@ header img{
 header a:link, header a:visited{    /*header id för headern*/
 	color:#FFF;
 	display: inline-block;
-	width: 180px;
+	width: 100%;
+	max-width: 180px;
 	height: 30px;
 	background-color: #666;
 	text-align:center;
@@ -29,6 +34,7 @@ header a:link, header a:visited{    /*header id för headern*/
 	text-decoration: none;
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 30px;
+	margin: auto;
 }
 
 
@@ -42,7 +48,7 @@ header a:hover{
 .intro , .whatwedo{
 	display: block;
     margin:auto;
-	max-width:55%;
+	max-width:700px;
 	margin-top:15px;
 	height: 250px;
     margin-bottom: 200px;
@@ -75,25 +81,17 @@ header a:hover{
     border-color: black;   
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
 	border-style:outset;
-	border-width: 1px;        					/*kategori classen är för startsidan, den fixar alla 3 kolumner och deras innehåll*/
+	border-width: 0.15em;        					/*kategori classen är för startsidan, den fixar alla 3 kolumner och deras innehåll*/
 	float:left;
 	width: 30%;
 	height: 700px; 
-	margin-bottom: 16px;
-	margin-left:27px;
-	margin-right:5px;
+	margin-left:2%;
+	margin-right:0.1%;
 	
 }
 
 
 
-.profileimage {
-	margin-top:30px;
-	margin-bottom: 15px;
-	height:250px;
-	justify-content: center;
-	margin-left:125px;
-}
 .portrait h2, p{
 text-align: center;
 	margin-top:50px;
@@ -106,8 +104,8 @@ text-align: center;
 
 .portrait h1{
 	text-align: center;
-	margin:5px;
-	margin-top:20px;
+	margin-top:5%;
+	font-size:2.25rem;
 }
 
 footer{
@@ -115,7 +113,58 @@ footer{
 	height:150px;
 }
 
+.photohide img{
+	display: none;
+}
+
 footer p{
 	
 	text-align: center;
+}
+
+.profileimage img{
+	height:auto;
+	width:100%;
+	max-width: 300px;
+	min-width: 50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left:5%;
+	padding-right:5%;
+}
+
+.profileimage {
+	margin-top:30px;
+	margin-bottom: 15px;
+	height:250px;
+	/*justify-content: center;
+	margin-left:18%;
+	display:block;*/
+}
+
+@media only screen and (min-width:1025px) {
+
+}
+
+@media only screen and (max-width:1025px){			/* För media under 769 alltså ipad.*/
+
+
+.portrait h1{
+	font-size: 1.5em;
+}
+	
+.portrait p{
+	font-size: 1em;
+}
+
+header a{
+	background-color: #666;
+	font-size: 1em;
+}
+
+
+
+
+
 }
