@@ -143,28 +143,105 @@ footer p{
 	display:block;*/
 }
 
-@media only screen and (min-width:1025px) {
+@media only screen and (max-width:425px) {
+	
+.portrait{
+	width: 80%;
+	margin-top:20px;
+	margin-left: 10%;
+	height:100%;
+}
+
+.profileimage{
+	height: 200px;
+}
+
+header a:link{
+	display: none;
+	
+}
+
+header {
+	height:75px;
+}
 
 }
 
-@media only screen and (max-width:1025px){			/* För media under 769 alltså ipad.*/
+
+
+
+
+
+@media only screen and (max-width:768px) and (min-width:670px) {
+
+	header a{
+		margin:auto;
+		font-size:0.8em;
+	}
+
+	.portrait {
+		height:700px;
+		margin-left:2.25%;
+		border-width: 0.05em;
+		border-color:grey;
+	}
+
+	.portrait h1{
+		font-size: 2rem;
+		padding-top:3%;
+	}
+
+	.portrait p{
+		font-size: 1.05em;
+		margin-left:auto;
+		margin-right:auto;
+		padding:1em;
+
+	}
+
+
+
+	.profileimage{
+		height: 170px;
+	}
+}
+
+@media only screen and (max-width:1025px) and (min-width:768px) {			/* För media under 769 alltså ipad.*/
 
 
 .portrait h1{
 	font-size: 1.5em;
 }
-	
+
+.portrait h2{
+	padding:0px;
+}
+
 .portrait p{
-	font-size: 1em;
+	font-size: 1.25em;
+	margin-left:auto;
+	margin-right:auto;
+	padding:1em;
+	margin-top:2px;
 }
 
-header a{
+.profileimage{
+	height: 230px;
+}
+
+
+header a:link{
 	background-color: #666;
-	font-size: 1em;
+	font-size: 1.25em;
+	width:130px;
 }
 
 
 
+
+
+}
+@media only screen and (max-width:1250px) and (min-width:1025px) {
 
 
 }
